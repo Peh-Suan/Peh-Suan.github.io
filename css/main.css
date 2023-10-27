@@ -1970,6 +1970,20 @@ textarea.form-control, textarea.form-control:focus {
   margin-right: 0;
   border-radius: 0;
 }
+/* unvisited link */
+a:link {
+  color: rgba(122, 239, 255, 0.876);
+}
+
+/* visited link */
+a:visited {
+  color: rgba(122, 239, 255, 0.876);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(164, 243, 254);
+}
 
 .share-buttons a i {
   font-size: 14px;
