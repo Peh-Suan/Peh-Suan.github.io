@@ -45,7 +45,9 @@
               </div>
               <div class="header-titles">
                 <h2>Huang Po-Hsuan</h2>
-                <h4>Linguistics Research Assistant</h4>
+                <h4>/xwaŋ pwo ɕɥæn/</h4>
+                <h3>Ng Peh-Suan</h3>
+                <h4>/ŋ̍ p<sup>h</sup>eʔ swæn/</h4>
               </div>
             </div>
 
@@ -96,7 +98,25 @@
                 <div><i class="lnr lnr-eye"></i></div>
               </a>
             </div>
-            <div class="copyrights">黃柏瑄 © 2023 All rights reserved.</div>
+
+            <script>
+              // Function to increment and display the visit count
+              function updateVisitCount() {
+                let visitCount = localStorage.getItem('visitCount') || 0;
+                visitCount = parseInt(visitCount);
+                visitCount++;
+                localStorage.setItem('visitCount', visitCount);
+            
+                // Update the placeholder element with the visit count
+                document.getElementById('count').textContent = visitCount;
+              }
+            
+              // Call the function to update the visit count
+              updateVisitCount();
+            </script>
+
+            <div class="copyrights"><p id="visit-count">Visitor count: <span id="count">0</span></p> 黃柏瑄 © 2023 All rights reserved.</div>
+
           </header>
 
           <!-- Mobile Navigation -->
@@ -124,7 +144,7 @@
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="title-block">
                           <h2>黃柏瑄</h2>
-                          <h4 style="color: grey">Ng Peh-Suan</h4>
+                          <!-- <h4 style="color: grey">Ng Peh-Suan</h4> -->
                           <div class="owl-carousel text-rotation">
 
                             <div class="item">
@@ -158,7 +178,34 @@
                         <ul>
                           <li>
                             <span class="title">Age</span>
-                            <span class="value">26</span>
+                            <span class="value" id="age"></span>
+
+                            <script>
+                              // Function to calculate age
+                              function calculateAge(birthdate) {
+                                const birthDate = new Date(birthdate);
+                                const currentDate = new Date();
+                                const ageInMilliseconds = currentDate - birthDate;
+                            
+                                // Convert milliseconds to years
+                                const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+                            
+                                // Round down to the nearest integer
+                                const age = Math.floor(ageInYears);
+                            
+                                return age;
+                              }
+                            
+                              // Your birthdate in the format 'YYYY-MM-DD'
+                              const birthdate = '1997-03-21'; // Change this to your birthdate
+                            
+                              // Calculate your age
+                              const age = calculateAge(birthdate);
+                            
+                              // Update the placeholder element with your age
+                              document.getElementById('age').textContent = `${age}`;
+                            </script>
+                            
                           </li>
 
                           <li>
@@ -578,15 +625,15 @@
                         
 
                         <div style="text-indent: -36px; padding-left: 36px; text-align: justify;">
-                          <p>Huang, Po-Hsuan and Liu, Yi-Chen. 2023, October 21. Ultrasonic-and-optical-imaging-assisted automated speech correctness judgment model. Tunghai International Conference on Second Language Teaching and Research (SLTR.THU). Taichung, Taiwan.</p>
-                          <p>Chiu, Chenhao and Huang, Po-Hsuan. 2023, August 7–11. Lip postures of high vowels in Taiwan Mandarin. International Congress of Phonetic Sciences (ICPhS). Prague, Czech.</p>
-                          <p>Huang, Po-Hsuan and Chiu, Chenhao. 2023, August 7–11. <em>Perception of Coarticulated Tones in Taiwan Mandarin and Taiwan Southern Min</em>. International Congress of Phonetic Sciences (ICPhS). Prague, Czech. <a href="conference_works/ICPhS_poster.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/ICPhS_poster.pdf" download><i class="lnr lnr-download"></i></a></p>
-                          <p>Huang, Po-Hsuan and Chiu, Chenhao. 2023, May 26–27. <em>Tonal Coarticulation in Taiwan Mandarin and Taiwan Southern Min</em>. Hanyang International Symposium on Phonetics and Cognitive Sciences of Language (HisPhonCog). Soeul, Korea. <a href="conference_works/HisPhonCog_poster.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/HisPhonCog_poster.pdf" download><i class="lnr lnr-download"></i></a></p>
-                          <p>Huang, Bo-Xuan and Chiu, Chenhao. 2022, November 3–4. <em>Articulation and syllabic affiliation of prenuclear glide in Taiwan Mandarin</em>. Ultrafest X: Conference on Ultrasound Imaging for Speech and Language Research. Manchester, United Kingdom. <a href="conference_works/Ultrafest_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/Ultrafest_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
-                          <p>Huang, Bo-Xuan, Lai, Jing-Hong and Liu, Te-Hsin. 2022, September 23–25. <em>On the Interaction between L1 Transfer and Universal Constraints – Evidence from the Acquisition of Mandarin Tones by French Speakers</em>. The 34<sup>th</sup> North American Conference on Chinese Linguistics (NACCL). Bloomington, IN, United States. <a href="conference_works/NACCL_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/NACCL_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
-                          <p>Huang, Bo-Xuan and Chiu, Chenhao. 2022, January 6–9. <em>Vowel-glide distinction in high vocoid diphthong structures in Squliq Atayal: An ultrasound and acoustic study</em>. The 96<sup>th</sup> Annual Meeting of the Linguistic Society of America (AML). Washington, DC, United States. <a href="conference_works/LSA_poster.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/LSA_poster.pdf" download><i class="lnr lnr-download"></i></a></p>
-                          <p>Huang, Bo-Xuan. 2021, October, 23. <em>Vowel–glide distinction in high vocoid diphthong structures in Squliq Atayal: An ultrasound and acoustic study</em>. The 22<sup>nd</sup> National Conference on Linguistics (NCL). Taipei, Taiwan. <a href="conference_works/NCL_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/NCL_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
-                          <p>Huang, Bo-Xuan and Her, One-Soon. 2021, October 15–16. <em>On a two-way distinction of questions in Paiwan</em>. The 7<sup>th</sup> Young Scholars’ Symposium on Taiwan Languages (YSSTL). Online. <a href="conference_works/7YSSTL_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/7YSSTL_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Po-Hsuan and Liu, Yi-Chen. 2023, October 21. Ultrasonic-and-optical-imaging-assisted automated speech correctness judgment model. Tunghai International Conference on Second Language Teaching and Research (SLTR.THU). Taichung, Taiwan. <a href="conference_works/SLTR_slide.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/SLTR_slide.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Chiu, Chenhao and Huang, Po-Hsuan. 2023, August 7–11. Lip postures of high vowels in Taiwan Mandarin. International Congress of Phonetic Sciences (ICPhS). Prague, Czech. <a href="conference_works/ICPhS_slide.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/ICPhS_slide.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Po-Hsuan and Chiu, Chenhao. 2023, August 7–11. Perception of Coarticulated Tones in Taiwan Mandarin and Taiwan Southern Min. International Congress of Phonetic Sciences (ICPhS). Prague, Czech. <a href="conference_works/ICPhS_poster.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/ICPhS_poster.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Po-Hsuan and Chiu, Chenhao. 2023, May 26–27. Tonal Coarticulation in Taiwan Mandarin and Taiwan Southern Min. Hanyang International Symposium on Phonetics and Cognitive Sciences of Language (HisPhonCog). Soeul, Korea. <a href="conference_works/HisPhonCog_poster.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/HisPhonCog_poster.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Bo-Xuan and Chiu, Chenhao. 2022, November 3–4. Articulation and syllabic affiliation of prenuclear glide in Taiwan Mandarin. Ultrafest X: Conference on Ultrasound Imaging for Speech and Language Research. Manchester, United Kingdom. <a href="conference_works/Ultrafest_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/Ultrafest_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Bo-Xuan, Lai, Jing-Hong and Liu, Te-Hsin. 2022, September 23–25. On the Interaction between L1 Transfer and Universal Constraints – Evidence from the Acquisition of Mandarin Tones by French Speakers. The 34<sup>th</sup> North American Conference on Chinese Linguistics (NACCL). Bloomington, IN, United States. <a href="conference_works/NACCL_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/NACCL_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Bo-Xuan and Chiu, Chenhao. 2022, January 6–9. Vowel-glide distinction in high vocoid diphthong structures in Squliq Atayal: An ultrasound and acoustic study. The 96<sup>th</sup> Annual Meeting of the Linguistic Society of America (AML). Washington, DC, United States. <a href="conference_works/LSA_poster.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/LSA_poster.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Bo-Xuan. 2021, October, 23. Vowel–glide distinction in high vocoid diphthong structures in Squliq Atayal: An ultrasound and acoustic study. The 22<sup>nd</sup> National Conference on Linguistics (NCL). Taipei, Taiwan. <a href="conference_works/NCL_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/NCL_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
+                          <p>Huang, Bo-Xuan and Her, One-Soon. 2021, October 15–16. On a two-way distinction of questions in Paiwan. The 7<sup>th</sup> Young Scholars’ Symposium on Taiwan Languages (YSSTL). Online. <a href="conference_works/7YSSTL_abstract.pdf"><i class="lnr lnr-eye"></i></a> <a href="conference_works/7YSSTL_abstract.pdf" download><i class="lnr lnr-download"></i></a></p>
                           
                         </div>
 
