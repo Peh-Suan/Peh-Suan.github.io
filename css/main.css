@@ -43,9 +43,9 @@ html {
 }
 
 body {
-  background-color: #0ba376;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0b7080), to(#0ba376));
-  background: linear-gradient(#0b7080, #0ba376);
+  background-color: #3e957b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b7080), to(#82cfb8));
+  background: linear-gradient(#0b7080, #82cfb8);
   margin: 0;
   width: 100%;
   height: 100%;
@@ -54,7 +54,7 @@ body {
   font-family: 'Poppins', Helvetica, sans-serif;
   line-height: 1.65em;
   overflow: hidden;
-  color: #d5d5d5;
+  color: #000000;
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 50%;
@@ -62,9 +62,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #eee;
+  color: #000000;
   font-family: 'Poppins', Helvetica, sans-serif;
   font-weight: 600;
+}
+
+p, span {
+  color: #000000;
 }
 
 h1 {
@@ -126,7 +130,7 @@ p {
   min-height: 80vh;
   margin: 10vh auto;
   padding: 0;
-  background-color: #444;
+  background-color: #d8d7d7;
   -webkit-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
   -moz-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
   box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
@@ -135,6 +139,7 @@ p {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 
 /* buttons */
 .btn-primary,
@@ -152,7 +157,7 @@ input[type="submit"],
   line-height: 1.2;
   border: 0;
   outline: 0;
-  border: 2px solid #0ba376;
+  border: 2px solid #82cfb8;
   color: #f5f5f5;
   text-shadow: none;
   background-color: transparent;
@@ -183,22 +188,22 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background-color: #0ba376;
+  background-color: #82cfb8;
   color: #fff;
-  border: 2px solid #0ba376;
+  border: 2px solid #82cfb8;
 }
 
 .btn-secondary {
-  border-color: #d5d5d5;
-  background-color: transparent;
+  border-color: #ffffff;
+  background-color: #e1e1e1;
   box-shadow: 0px 10px 10px -8px rgba(0,0,0,.3);
   color: #f5f5f5;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
-  border-color: #d5d5d5;
+  color: #5d7854;
+  border-color: #ffffff;
   background-color: #d5d5d5;
 }
 
@@ -245,7 +250,7 @@ input[type="submit"]:focus {
   width: 52px;
   height: 52px;
   margin: 100px auto;
-  background-color: #0ba376;
+  background-color: #82cfb8;
 
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -300,7 +305,7 @@ input[type="submit"]:focus {
     padding: 15px 0;
     width: 70px;
     right: -90px;
-    background-color: #444;
+    background-color: #ffffff;
     border-radius: 35px;
     z-index: 999;
     list-style: none;
@@ -325,7 +330,7 @@ input[type="submit"]:focus {
   ul.main-menu a.active,
   ul.main-menu a:focus,
   ul.main-menu a:hover {
-    color: #0ba376;
+    color: #82cfb8;
   }
 
   ul.main-menu .menu-icon {
@@ -340,7 +345,7 @@ input[type="submit"]:focus {
     opacity: 0;
     color: #fff;
     padding: 2px 10px;
-    background-color: #0ba376;
+    background-color: #82cfb8;
     white-space: nowrap;
     right: 0;
     top: -50%;
@@ -368,7 +373,7 @@ input[type="submit"]:focus {
   padding: 10px 0;
   width: 60px;
   right: -80px;
-  background-color: #444;
+  background-color: #ffffff;
   border-radius: 35px;
   z-index: 98;
   list-style: none;
@@ -393,7 +398,7 @@ input[type="submit"]:focus {
 }
 
 .lmpixels-arrows-nav div:hover {
-  color: #0ba376;
+  color: #82cfb8;
 }
 /* --- End LMPixels Arrow Nav --- */
 
@@ -406,8 +411,8 @@ input[type="submit"]:focus {
 
 .header-photo img {
   max-width: 100%;
-  background-color: #fff;
-  border: 3px solid #fff;
+  background-color: #6a686802;
+  border: 3px solid #3b3b3b12;
   border-radius: 300px;
 }
 
@@ -420,9 +425,9 @@ input[type="submit"]:focus {
   content: '';
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, #000000, #000000 1px, transparent 0px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #717171, #6b6b6b 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #626262, #626262 1px, transparent 0px, transparent 100%);
   -webkit-background-size: 6px 6px;
   -moz-background-size: 6px 6px;
   background-size: 6px 6px;
@@ -432,7 +437,7 @@ input[type="submit"]:focus {
 .header-titles h2 {
   font-size: 36px;
   font-weight: 600;
-  color: #f5f5f5;
+  color: #000000;
   margin: 5px 0 7px;
   line-height: 1.2em;
 } 
@@ -440,7 +445,7 @@ input[type="submit"]:focus {
 .header-titles h4 {
   font-size: 18px;
   font-weight: 300;
-  color: #bbb;
+  color: #353535;
   margin: 5px 0;
   line-height: 1.2em;
 }
@@ -460,7 +465,7 @@ input[type="submit"]:focus {
 }
 
 .social-links ul li a {
-  color: #fff;
+  color: #345e39;
   border-radius: 20px;
   font-size: 18px;
   padding: 0;
@@ -490,7 +495,7 @@ input[type="submit"]:focus {
 
 .header-buttons .btn-primary:hover {
   background-color: #fff;
-  color: #0ba376;
+  color: #82cfb8;
   border-color: #fff;
 }
 
@@ -552,7 +557,7 @@ input[type="submit"]:focus {
 }
 
 .section-content {
-  background-color: #222;
+  background-color: white;
   padding: 60px;
   position: relative;
   height: auto;
@@ -568,7 +573,7 @@ input[type="submit"]:focus {
 
 .single-page-content {
   position: absolute;
-  background-color: #222;
+  background-color: wheat;
   height: 100%;
   width: 100%;
   border-radius: 30px;
@@ -593,15 +598,15 @@ input[type="submit"]:focus {
 }
 
 .ps>.ps__scrollbar-y-rail>.ps__scrollbar-y {
-  background-color: #b5b6b7;
+  background-color: rgb(217, 248, 201);
 }
 
 .ps:hover>.ps__scrollbar-y-rail:hover {
-  background-color: #444;
+  background-color: #ffffff7f;
 }
 
 .ps:hover>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y {
-    background-color: #0ba376;
+    background-color: #82cfb8;
 }
 
 .ps>.ps__scrollbar-y-rail {
@@ -619,7 +624,7 @@ input[type="submit"]:focus {
 }
 
 .ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y {
-  background-color: #0ba376;
+  background-color: #82cfb8;
 }
 /* --- End Custom ScrollBar Customization --- */
 
@@ -638,7 +643,7 @@ input[type="submit"]:focus {
 }
 
 .page-title h2 span {
-  color: #0ba376;
+  color: #82cfb8;
 }
 
 .page-title:after {
@@ -649,9 +654,9 @@ input[type="submit"]:focus {
   content: '';
   height: 30px;
   width: 50px;
-  background-image: -webkit-repeating-radial-gradient(center center, #0ba376, #0ba376 1px, transparent 0px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, #0ba376, #0ba376 1px, transparent 0px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, #0ba376, #0ba376 1px, transparent 0px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, #82cfb8, #82cfb8 1px, transparent 0px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #82cfb8, #82cfb8 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #82cfb8, #82cfb8 1px, transparent 0px, transparent 100%);
   -webkit-background-size: 6px 6px;
   -moz-background-size: 6px 6px;
   background-size: 6px 6px;
@@ -712,7 +717,7 @@ textarea.form-control, textarea.form-control:focus {
   top: 0;
   opacity: 0;
   background: transparent;
-  border: 2px solid #0ba376;
+  border: 2px solid #82cfb8;
   border-right-width: 0;
   height: 100%;
   -webkit-transition: all 0.3s ease-in-out;
@@ -783,7 +788,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .form-group-with-icon.form-group-focus i {
-  color: #0ba376;
+  color: #82cfb8;
 }
 
 .form-group.form-group-w-checkbox {
@@ -837,7 +842,7 @@ textarea.form-control, textarea.form-control:focus {
 
 .form-group .form-control:focus ~ label,
 .form-group.form-group-focus .form-control ~ label {
-  color: #0ba376;
+  color: #82cfb8;
   top: -20px;
   left: 0;
   z-index: 1;
@@ -872,7 +877,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .block-title h3 span {
-  color: #0ba376;
+  color: #82cfb8;
 }
 
 .block-title:after {
@@ -883,9 +888,9 @@ textarea.form-control, textarea.form-control:focus {
   content: '';
   height: 20px;
   width: 30px;
-  background-image: -webkit-repeating-radial-gradient(center center, #0ba376, #0ba376 1px, transparent 0px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, #0ba376, #0ba376 1px, transparent 0px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, #0ba376, #0ba376 1px, transparent 0px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, #82cfb8, #82cfb8 1px, transparent 0px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #82cfb8, #82cfb8 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #82cfb8, #82cfb8 1px, transparent 0px, transparent 100%);
   -webkit-background-size: 6px 6px;
   -moz-background-size: 6px 6px;
   background-size: 6px 6px;
@@ -934,7 +939,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .info-list .title {
-  color: #0ba376;
+  color: #82cfb8;
   margin-right: 5px;
   font-weight: 600;
 }
@@ -962,7 +967,7 @@ textarea.form-control, textarea.form-control:focus {
 .info-block-w-icon i {
   position: relative;
   font-size: 42px;
-  color: #0ba376;
+  color: #82cfb8;
   opacity: .7;
 }
 /* --- End Info block with Icon --- */
@@ -974,9 +979,9 @@ textarea.form-control, textarea.form-control:focus {
   width: 100%;
   display: block;
   margin: 0 0 15px 0;
-  background-color: #333;
+  background-color: #dfdfdf;
   padding: 20px 10px;
-  border: 1px solid #444;
+  border: 1px solid #c8c8c8;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -991,7 +996,7 @@ textarea.form-control, textarea.form-control:focus {
 .lm-info-block i {
   position: relative;
   font-size: 33px;
-  color: #0ba376;
+  color: #82cfb8;
   z-index: 1;
 }
 
@@ -1006,7 +1011,7 @@ textarea.form-control, textarea.form-control:focus {
   font-weight: 400;
   display: block;
   margin: 10px 0;
-  color: #0ba376;
+  color: #82cfb8;
 }
 
 
@@ -1050,7 +1055,7 @@ textarea.form-control, textarea.form-control:focus {
   font-size: 30px;
   right: 0;
   top: 7px;
-  color: #0ba376;
+  color: #82cfb8;
   opacity: .5;
 }
 
@@ -1101,8 +1106,8 @@ textarea.form-control, textarea.form-control:focus {
 .clients.owl-carousel .owl-nav .owl-next {
   position: relative;
   display: inline-block;
-  background-color: #444;
-  border: 1px solid #444;
+  background-color: #dadada;
+  border: 1px solid #dadada;
   border-radius: 5px;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
@@ -1115,7 +1120,7 @@ textarea.form-control, textarea.form-control:focus {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  color: #d5d5d5;
+  color: #ffffff;
 }
 
 .testimonials.owl-carousel .owl-nav .owl-prev,
@@ -1153,8 +1158,8 @@ textarea.form-control, textarea.form-control:focus {
 .testimonials.owl-carousel .owl-nav .owl-next:hover,
 .clients.owl-carousel .owl-nav .owl-prev:hover,
 .clients.owl-carousel .owl-nav .owl-next:hover {
-    background-color: #0ba376;
-    border-color: #0ba376;
+    background-color: #82cfb8;
+    border-color: #82cfb8;
     color: #fff;
 }
 /* --- End of Sliders Nav --- */
@@ -1202,7 +1207,7 @@ textarea.form-control, textarea.form-control:focus {
   left: 30%;
   bottom: 0;
   width: 1px;
-  background-color: #444;
+  background-color: #7c7c7c;
 }
 
 .timeline-second-style .divider:before {
@@ -1215,7 +1220,7 @@ textarea.form-control, textarea.form-control:focus {
   position: absolute;
   margin-left: -8px;
   border-radius: 10px;
-  background-color: #0ba376;
+  background-color: #82cfb8;
   opacity: .25;
   z-index: 0;
 }
@@ -1228,15 +1233,16 @@ textarea.form-control, textarea.form-control:focus {
   width: 9px;
   height: 9px;
   margin-left: -4px;
-  background-color: #222;
+  background-color: #246019;
   border-radius: 5px;
-  border: 2px solid #0ba376;
+  border: 2px solid #82cfb8;
   z-index: 1;
 }
 
 .timeline-second-style .item-title {
   font-size: 16px;
   margin-bottom: 3px;
+  color: #000000;
 }
 
 .timeline-second-style .item-period {
@@ -1252,7 +1258,7 @@ textarea.form-control, textarea.form-control:focus {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.45em;
-  color: #a5a6a7;
+  color: #000000;
 }
 
 .timeline-second-style .timeline-item:last-child .right-part {
@@ -1287,7 +1293,7 @@ textarea.form-control, textarea.form-control:focus {
   position: relative;
   display: inline-block;
   background-color: #222;
-  border: 1px solid #0ba376;
+  border: 1px solid #82cfb8;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -1302,7 +1308,7 @@ textarea.form-control, textarea.form-control:focus {
 .skills-second-style .skill-container:before {
   content: '';
   position: absolute;
-  background-color: #0ba376;
+  background-color: #82cfb8;
 }
 
 .skills-second-style .skill-value {
@@ -1315,8 +1321,8 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-percentage {
-  background-color: #0ba376;
-  border: 2px solid #222;
+  background-color: #82cfb8;
+  border: 2px solid #ffffff;
   -moz-border-radius: 9px;
   -webkit-border-radius: 9px;
   border-radius: 9px;
@@ -1390,7 +1396,7 @@ textarea.form-control, textarea.form-control:focus {
 
 .knowledges li {;
   display: inline-block;
-  background-color: #0ba376;
+  background-color: #82cfb8;
   border-radius: 3px;
   color: #fff;
   padding: 1px 10px;
@@ -1613,7 +1619,7 @@ textarea.form-control, textarea.form-control:focus {
   width: 30px;
   height: 30px;
   background-color: #222;
-  color: #0ba376;
+  color: #82cfb8;
   text-align: center;
   line-height: 30px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1871,7 +1877,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .ajax-page-nav > div.nav-item a:hover {
-  background-color: #0ba376;
+  background-color: #82cfb8;
   color: #fff;
 }
 
@@ -1930,7 +1936,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .project-general-info .fa {
-  color: #0ba376;
+  color: #82cfb8;
   margin-right: 5px;
 }
 
@@ -1962,8 +1968,8 @@ textarea.form-control, textarea.form-control:focus {
 
 .share-buttons a:hover {
   color: #fff;
-  background-color: #0ba376;
-  border-color: #0ba376;
+  background-color: #82cfb8;
+  border-color: #82cfb8;
 }
 
 .share-buttons a:last-child {
@@ -1972,17 +1978,17 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* unvisited link */
 a:link {
-  color: rgba(122, 239, 255, 0.876);
+  color: rgba(49, 129, 143, 0.876);
 }
 
 /* visited link */
 a:visited {
-  color: rgba(122, 239, 255, 0.876);
+  color: rgba(49, 129, 143, 0.876);
 }
 
 /* mouse over link */
 a:hover {
-  color: rgb(164, 243, 254);
+  color: rgba(28, 73, 81, 0.876);
 }
 
 .share-buttons a i {
@@ -2402,7 +2408,7 @@ blockquote {
     height: 48px;
     line-height: 46px;
     text-align: center;
-    background-color: #0ba376;
+    background-color: #82cfb8;
     right: 10px;
     font-size: 19px;
     top: 10px;
@@ -2491,7 +2497,7 @@ blockquote {
     right: 10px;
     bottom: 10px;
     padding: 5px 0;
-    border: 2px solid #0ba376;
+    border: 2px solid #82cfb8;
   }
 
   .lmpixels-arrows-nav div {
@@ -2682,7 +2688,7 @@ blockquote {
   content: '';
   height: 2px;
   margin-top: 0;
-  background-color: #0ba376;
+  background-color: #82cfb8;
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -2826,7 +2832,7 @@ blockquote {
 }
 
 .title-block h2 {
-  color: #f5f5f5;
+  color: #000000;
   font-size: 60px;
   line-height: 74px;
   margin: 0;
@@ -2864,9 +2870,9 @@ blockquote {
   width: 100%;
   display: block;
   margin: 0 0 15px;
-  background: #333;
+  background: #33333351;
   padding: 25px 10px 15px;
-  border: 2px solid #444;
+  border: 2px solid #dceed6;
   border-radius: 10px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2897,12 +2903,13 @@ blockquote {
 .fun-fact h4 {
   font-size: 16px;
   margin: 15px;
+  color: #ffffff;
 }
 
 .fun-fact i {
   position: relative;
   font-size: 33px;
-  color: #0ba376;
+  color: #5be4bb;
   margin-bottom: 6px;
   width: 33px;
   height: 33px;
@@ -2913,11 +2920,11 @@ blockquote {
   font-weight: 400;
   display: block;
   margin: 10px 0;
-  color: #0ba376;
+  color: #82cfb8;
 }
 
 .fun-fact-block-value {
-  color: #aaa;
+  color: #e3e3e3;
   font-size: 36px;
   line-height: 50px;
   display: block;
