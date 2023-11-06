@@ -130,7 +130,7 @@ p {
   min-height: 80vh;
   margin: 10vh auto;
   padding: 0;
-  background-color: #d8d7d7;
+  background-color: #eef4eae8;;
   -webkit-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
   -moz-box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
   box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
@@ -194,17 +194,18 @@ input[type="submit"]:focus {
 }
 
 .btn-secondary {
-  border-color: #ffffff;
-  background-color: #e1e1e1;
+  border-color: #ffffff99;
+  background-color: #e1e1e195;
   box-shadow: 0px 10px 10px -8px rgba(0,0,0,.3);
   color: #f5f5f5;
+  z-index:1
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #5d7854;
   border-color: #ffffff;
-  background-color: #d5d5d5;
+  background-color: #d5d5d5da;
 }
 
 .animated {
@@ -231,7 +232,7 @@ input[type="submit"]:focus {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: #222;
+  background: #e9e9e9;
 }
 
 .preloader-animation {
@@ -387,7 +388,7 @@ input[type="submit"]:focus {
   display: block;
   position: relative;
   text-align: center;
-  color: #b5b6b7;
+  color: #a0d572c7;
   padding: 10px;
   font-size: 24px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -398,7 +399,8 @@ input[type="submit"]:focus {
 }
 
 .lmpixels-arrows-nav div:hover {
-  color: #82cfb8;
+  color: #79a254;
+  font-size: 26px;
 }
 /* --- End LMPixels Arrow Nav --- */
 
@@ -453,6 +455,7 @@ input[type="submit"]:focus {
 /* --- Social Links --- */
 .social-links {
   margin: 20px 0;
+  z-index: 1;
 }
 
 .social-links ul {
@@ -465,10 +468,11 @@ input[type="submit"]:focus {
 }
 
 .social-links ul li a {
-  color: #345e39;
+  color: #345e39ce;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0;
+  background-color: rgba(255, 255, 255, 0.615);
   height: 30px;
   width: 30px;
   display: block;
@@ -479,7 +483,8 @@ input[type="submit"]:focus {
 
 .social-links ul li a:hover {
   opacity: 1;
-  background-color: rgba(255,255,255,.2);
+  color: #345e39;
+  background-color: rgb(255, 255, 255);
 }
 /* --- End Social Links --- */
 
@@ -509,6 +514,7 @@ input[type="submit"]:focus {
   line-height: 14px;
   font-size: 12px;
   text-align: center;
+  z-index: 0
 }
 
 /* ------------------------------------------------------------
@@ -573,7 +579,7 @@ input[type="submit"]:focus {
 
 .single-page-content {
   position: absolute;
-  background-color: wheat;
+  background-color: #e6fcd9e8;;
   height: 100%;
   width: 100%;
   border-radius: 30px;
@@ -620,7 +626,7 @@ input[type="submit"]:focus {
 }
 
 .ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail {
-  background-color: #555;
+  background-color: rgb(217, 248, 201);
 }
 
 .ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y {
@@ -1848,7 +1854,7 @@ textarea.form-control, textarea.form-control:focus {
 .ajax-page-content {
   height: 100%;
   overflow: auto;
-  background-color: #222;
+  background-color: #ffffff;
 }
 
 .ajax-page-wrapper {
@@ -1873,7 +1879,7 @@ textarea.form-control, textarea.form-control:focus {
   width: 40px;
   text-align: center;
   color: #b5b5b5;
-  background-color: #444;
+  background-color: #ffffff;
 }
 
 .ajax-page-nav > div.nav-item a:hover {
@@ -2308,7 +2314,7 @@ blockquote {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #444;
+    background-color: #e6fcd9e8;
     z-index: 99;
     padding: 30px 30px 10px 30px;
     text-align: center;
@@ -2430,7 +2436,7 @@ blockquote {
     position: absolute;
     height: 3px;
     width: 50%;
-    background: #fff;
+    background: black;
     border-radius: 5px;
     opacity: 1;
     left: 25%;
@@ -2492,12 +2498,12 @@ blockquote {
   }
 
   .lmpixels-arrows-nav {
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(144, 144, 144, 0.586);
     width: 48px;
     right: 10px;
     bottom: 10px;
     padding: 5px 0;
-    border: 2px solid #82cfb8;
+    border: 2px solid #a3cabf;
   }
 
   .lmpixels-arrows-nav div {
@@ -2903,13 +2909,13 @@ blockquote {
 .fun-fact h4 {
   font-size: 16px;
   margin: 15px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .fun-fact i {
   position: relative;
   font-size: 33px;
-  color: #5be4bb;
+  color: #6e9d8f;
   margin-bottom: 6px;
   width: 33px;
   height: 33px;
