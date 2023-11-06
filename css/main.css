@@ -224,6 +224,7 @@ input[type="submit"]:focus {
 .no-js .preloader-portfolio { 
   display: none;
 }
+
 .preloader,
 .preloader-portfolio {
   position: fixed;
@@ -248,14 +249,22 @@ input[type="submit"]:focus {
 }
 
 .preloader-spinner {
-  width: 52px;
-  height: 52px;
+  width: 50px;
+  height: 50px;
   margin: 100px auto;
   background-color: #82cfb8;
-
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
+  z-index: 1000
+}
+
+.overlapping-text {
+  position: absolute;
+  text-align: center;
+  top: 50%; /* Adjust the top position to overlap as needed */
+  left: 0px; /* Adjust the left position to overlap as needed */
+  z-index: 0; /* Set a lower z-index to make it appear below the div */
 }
 
 @-webkit-keyframes sk-scaleout {
