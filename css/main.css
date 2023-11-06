@@ -1932,7 +1932,7 @@ textarea.form-control, textarea.form-control:focus {
   display: block;
   position: relative;
   padding: 20px 25px 25px;
-  background-color: #333;
+  background-color: #d5ebabda;
 }
 
 .ajax-page-wrapper .block-title h3 {
@@ -2034,11 +2034,11 @@ a:hover {
   display: inline-block;
   font-size: 12px;
   line-height: 1.5em;
-  color: #e5e5e5;
+  color: #154328;
   padding: 2px 7px;
-  background-color: #444;
+  background-color: #ffffff;
   border-radius: 3px;
-  border: 1px solid #444;
+  border: 1px solid #ffffff;
   margin: 3px 2px 2px;
 }
 
