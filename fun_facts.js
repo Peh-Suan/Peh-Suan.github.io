@@ -125,7 +125,7 @@ function displayRandomText() {
 // text_element.innerHTML = randomText
 
 displayRandomText()
-const displayRandomTextInterval = setInterval(displayRandomText, 3500);
+const displayRandomTextInterval = setInterval(displayRandomText, 5000);
 
 window.onload = function(){
     clearInterval(displayRandomTextInterval)
@@ -133,8 +133,7 @@ window.onload = function(){
     setTimeout(
         function () {
             document.getElementById("randomText").style.opacity = '0'
-            document.getElementById("randomText") = ''
-        }, 100
+        }, 0
     )
     setTimeout(
         function () {
@@ -163,7 +162,7 @@ window.onload = function(){
             document.getElementById("randomText") = ''
         }, 100
     )
-    
+
 
  };
 
