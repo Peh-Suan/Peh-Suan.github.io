@@ -108,8 +108,77 @@ function displayRandomText() {
 
     // Display the random text in the HTML element with the id "randomText"
     // document.getElementById("randomText").style.width = document.querySelector('.preloader-animation').getBoundingClientRect().width
-    document.getElementById("randomText").innerHTML = randomText;
+    const text_element = document.getElementById("randomText")
+    text_element.style.opacity = 0
+
+    setTimeout(
+        function () {
+            text_element.innerHTML = randomText
+            text_element.style.opacity = 1
+        }, 500
+    )
 }
 
+// const randomIndex = Math.floor(Math.random() * texts.length);
+// const randomText = texts[randomIndex];
+// text_element = document.getElementById("randomText")
+// text_element.innerHTML = randomText
+
+displayRandomText()
+const displayRandomTextInterval = setInterval(displayRandomText, 3500);
+
+window.onload = function(){
+    clearInterval(displayRandomTextInterval)
+    document.getElementById("randomText").style.zIndex = '-10000'
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText") = ''
+        }, 100
+    )
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText") = ''
+        }, 100
+    )
+
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText") = ''
+        }, 100
+    )
+
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText") = ''
+        }, 100
+    )
+
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText") = ''
+        }, 100
+    )
+    
+
+ };
+
+// document.addEventListener('load', function () {
+//     // This code will run when the HTML document is fully loaded and parsed.
+//     const u = 1
+//     clearInterval(displayRandomTextTask)
+//     text_element.style.zIndex = '-10000'
+// });
+
+// function whenLoading() {
+//     setInterval(displayRandomText, 1000);
+// }
+
+// window.addEventListener("load", whenLoading);
+
 // Call the function when the page loads
-window.addEventListener("load", displayRandomText);
+// 
