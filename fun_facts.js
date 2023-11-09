@@ -133,36 +133,54 @@ window.onload = function(){
     setTimeout(
         function () {
             document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText").innerHTML = ''
         }, 0
     )
     setTimeout(
         function () {
             document.getElementById("randomText").style.opacity = '0'
-            document.getElementById("randomText") = ''
+            document.getElementById("randomText").innerHTML = ''
         }, 100
     )
 
     setTimeout(
         function () {
             document.getElementById("randomText").style.opacity = '0'
-            document.getElementById("randomText") = ''
-        }, 100
+            document.getElementById("randomText").innerHTML = ''
+        }, 200
     )
 
     setTimeout(
         function () {
             document.getElementById("randomText").style.opacity = '0'
-            document.getElementById("randomText") = ''
-        }, 100
+            document.getElementById("randomText").innerHTML = ''
+        }, 300
     )
 
     setTimeout(
         function () {
             document.getElementById("randomText").style.opacity = '0'
-            document.getElementById("randomText") = ''
-        }, 100
+            document.getElementById("randomText").innerHTML = ''
+        }, 400
     )
-
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText").innerHTML = ''
+        }, 500
+    )
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText").innerHTML = ''
+        }, 600
+    )
+    setTimeout(
+        function () {
+            document.getElementById("randomText").style.opacity = '0'
+            document.getElementById("randomText").innerHTML = ''
+        }, 700
+    )
 
  };
 
