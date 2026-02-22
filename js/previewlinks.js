@@ -61,11 +61,11 @@
       const titleText = anchor.textContent || "Link";
       const descText = anchor.getAttribute("data-desc");
 
-      let innerHTML = `<span class="lp-title">${titleText}</span>`;
-      if (descText) {
-        innerHTML += `<span class="lp-desc">${descText}</span>`;
-      }
-      
+    //   let innerHTML = `<span class="lp-title">${titleText}</span>`;
+    //   if (descText) {
+    //     innerHTML += `<span class="lp-desc">${descText}</span>`;
+    //   }
+      let innerHTML = ``
       // Only show the URL at the bottom if it's not a local file
       if (hostname && hostname !== window.location.hostname) {
         innerHTML += `<span class="lp-url">${hostname}</span>`;
