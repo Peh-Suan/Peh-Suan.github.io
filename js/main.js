@@ -314,3 +314,21 @@
     });
 
 })(jQuery);
+
+window.addEventListener('load', function() {
+  // 1. Check if the user just landed on the default page (no hash) or specifically on #home
+  if (!window.location.hash || window.location.hash === '#home') {
+    
+    // 2. Wait 1.6 seconds (1600 milliseconds)
+    setTimeout(function() {
+      
+      // 3. Find the "About Me" menu link and click it programmatically
+      const aboutMeBtn = document.querySelector('a[href="#about-me"]');
+      if (aboutMeBtn) {
+        aboutMeBtn.click();
+      }
+      
+    }, 1600); 
+
+  }
+});
