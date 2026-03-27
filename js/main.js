@@ -314,3 +314,32 @@
     });
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+  // 1. Find the Portfolio link in your navigation
+  const portfolioNavBtn = document.querySelector('a[href="#portfolio"]');
+
+  // 2. Create the function that loads the assets
+  function loadPortfolio() {
+    // Find all elements with a 'data-src' inside the portfolio section
+    const lazyAssets = document.querySelectorAll('section[data-id="portfolio"] [data-src]');
+    
+    lazyAssets.forEach(function(asset) {
+      // Swap data-src to src
+      asset.src = asset.getAttribute('data-src');
+      
+      // If it's a video source, tell the parent <video> tag to load it
+      if (asset.tagName.toLowerCase() === 'source') {
+        asset.parentElement.load();
+      }
+    });
+
+    // 3. Remove the event listener so this only runs the VERY FIRST time they click it
+    portfolioNavBtn.removeEventListener('click', loadPortfolio);
+  }
+
+  // 4. Attach the listener to the button
+  if (portfolioNavBtn) {
+    portfolioNavBtn.addEventListener('click', loadPortfolio);
+  }
+});
