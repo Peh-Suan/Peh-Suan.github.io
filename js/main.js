@@ -316,6 +316,7 @@
 })(jQuery);
 
 window.addEventListener('load', function() {
+  
   // 1. Check if the user just landed on the default page (no hash) or specifically on #home
   if (!window.location.hash || window.location.hash === '#home') {
     
