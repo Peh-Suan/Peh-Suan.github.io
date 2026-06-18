@@ -53,8 +53,58 @@
       background: #3f7c42;
     }
 
+    .button.author {
+      background: #2f353b;
+    }
+
     .button:hover {
       opacity: 0.9;
+    }
+
+    .author-row {
+      display: flex;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .author-row .button {
+      flex: 1;
+      margin: 0;
+      font-size: 1rem;
+      padding: 16px 12px;
+    }
+
+    .materials-section {
+      margin-top: 48px;
+      margin-bottom: 60px;
+    }
+
+    .author-section {
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+    .logo-banner {
+      width: 100%;
+      /* background: #990000; USC cardinal */
+      padding: 18px 24px;
+      box-sizing: border-box;
+      margin-bottom: 32px;
+      border-radius: 0 0 18px 18px;
+    }
+
+    .logo-banner img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Optional: stack them on very small phone screens */
+    @media (max-width: 380px) {
+      .author-row {
+        flex-direction: column;
+      }
     }
 
     .footer {
@@ -67,12 +117,17 @@
 
 <body>
   <main class="container">
-    <h1>LabPhon 20</h1>
-    <h2>The conditioning of surprisal and many-to-one mappings in speech variation</h2>
+    <div class="logo-banner">
+      <img src="assets/FormalLogotype_v2.png" alt="University of Southern California logo">
+    </div>
+    <h2>LabPhon 20</h2>
+    <h1>The conditioning of surprisal and many-to-one mappings in speech variation</h1>
     <h3>Po-Hsuan Huang <br> Canaan Breiss</h3>
     <h3>University of Southern California</h3>
+    <!-- <img class="usc-logo" src="assets/FormalLogotype_v2.png" alt="University of Southern California logo"> -->
 
 
+    <section class="materials-section">
     <p>
       Presentation materials
     </p>
@@ -84,18 +139,23 @@
     <a class="button secondary" href="https://peh-suan.github.io/temp/labphon20/slides/index.html">
       Slides
     </a>
+    </section>
 
+    <section class="author-section">
     <p>
       More about us
     </p>
-    <a class="button secondary" href="https://peh-suan.github.io/">
-      Po-Husuan Huang
-    </a>
 
-    <a class="button secondary" href="https://www.cbreiss.com/">
-      Canaan Breiss
-    </a>
+    <div class="author-row">
+      <a class="button author" href="https://peh-suan.github.io/">
+        Po-Hsuan Huang
+      </a>
 
+      <a class="button author" href="https://www.cbreiss.com/">
+        Canaan Breiss
+      </a>
+    </div>
+    </section>
     <div class="footer">
       Scan the QR code again anytime to return to this page.
     </div>
