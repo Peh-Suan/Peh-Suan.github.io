@@ -34,20 +34,17 @@
       background: #fff;
       font-family: "Geist Mono", ui-monospace, Menlo, monospace;
     }
-    @media only screen and (max-width: 1024px) {
-      #shark-bg { display: none; }
-    }
     /* Slightly see-through white panels so the sharks show faintly behind them */
+    .section-content,
+    ul.main-menu,
+    .lmpixels-arrows-nav {
+      background-color: rgba(255, 255, 255, 0.88) !important;
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
+    }
+    .page-content { background-color: transparent !important; }
     @media only screen and (min-width: 1025px) {
-      .section-content,
-      ul.main-menu,
-      .lmpixels-arrows-nav {
-        background-color: rgba(255, 255, 255, 0.88) !important;
-        -webkit-backdrop-filter: blur(3px);
-        backdrop-filter: blur(3px);
-      }
-      /* Move the card's mint tint onto the left column only, so it doesn't sit behind the white panel */
-      .page-content { background-color: transparent !important; }
+      /* Desktop: the card's mint tint sits on the left column only, so it doesn't sit behind the white panel */
       .header {
         background-color: #eef4eae8;
         border-radius: 32px 0 0 32px;
@@ -1157,7 +1154,7 @@
   <script src="js/validator.js"></script>
   <script src="js/main.js"></script>
   <script src="js/previewlinks.js"></script>
-  <script src="js/ascii-whale-turtles.js?v=1"></script>
+  <script src="js/ascii-whale-turtles.js?v=2"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 
 </body>
