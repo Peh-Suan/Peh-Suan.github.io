@@ -36,7 +36,6 @@
     }
     /* Slightly see-through white panels so the sharks show faintly behind them */
     .section-content,
-    ul.main-menu,
     .lmpixels-arrows-nav {
       background-color: rgba(255, 255, 255, 0.88) !important;
       -webkit-backdrop-filter: blur(3px);
@@ -44,6 +43,12 @@
     }
     .page-content { background-color: transparent !important; }
     @media only screen and (min-width: 1025px) {
+      /* Desktop only: the side menu is a white pill here (on phones it has no background) */
+      ul.main-menu {
+        background-color: rgba(255, 255, 255, 0.88) !important;
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+      }
       /* Desktop: the card's mint tint sits on the left column only, so it doesn't sit behind the white panel */
       .header {
         background-color: #eef4eae8;
