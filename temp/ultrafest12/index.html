@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ultrafest XII</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 480px;
+      padding: 32px 24px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      display: flex;
+      width: 100%;
+      align-items: center;      /* vertical centering */
+      justify-content: center;  /* horizontal centering */
+      box-sizing: border-box;
+      margin: 8px 0;
+      padding: 6px 6px;
+      border-radius: 14px;
+      background: #304a9a;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .button.secondary {
+      background: #3f7c42;
+    }
+
+    .button.author {
+      background: #2f353b;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .author-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .author-row .button {
+      flex: 1;
+      font-size: 1rem;
+      padding: 16px 12px;
+    }
+
+    .materials-section {
+      margin-top: 12px;
+      margin-bottom: 18px;
+    }
+
+    .author-section {
+      margin-top: 12px;
+      margin-bottom: 0px;
+    }
+    .logo-banner {
+      width: 100%;
+      padding: 18px 24px;
+      box-sizing: border-box;
+      margin-bottom: 6px;
+      border-radius: 0 0 18px 18px;
+    }
+
+    .logo-banner img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Optional: stack them on very small phone screens */
+    @media (max-width: 380px) {
+      .author-row {
+        flex-direction: column;
+      }
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    h1 {
+      margin-top: 5px;
+      margin-bottom: 4px; /* Shrinks space below the main header */
+    }
+
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 4px; /* Shrinks space below the main header */
+    }
+
+    h3 {
+      margin-top: 2px;
+      margin-bottom: 2px; /* Shrinks space below the main header */
+    }
+
+    h4 {
+      margin-top: 2px;    /* Shrinks space above the sub-header */
+      margin-bottom: 2px;
+    }
+    p {
+      margin-top: 1px; 
+      margin-bottom: 1px;      /* Removes extra space above paragraphs */
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="logo-banner">
+      <img src="UniversityofPennsylvania_FullLogo_RGB.png" alt="University of Pennsylvania logo">
+    </div>
+    <h2>Ultrafest XII</h2>
+    <h1>Functional load modulates acoustic and articulatory variability in English</h1>
+    <h3>Po-Hsuan Huang<br>Chenhao Chiu</h3>
+    <h4>University of Pennsylvania<br>National Taiwan University</h4>
+
+
+    <section class="materials-section">
+    <p>
+      Presentation materials
+    </p>
+
+    <a class="button" href="abstract.pdf">
+      Abstract
+    </a>
+
+    <a class="button secondary" href="slides.pdf">
+      Slides
+    </a>
+    </section>
+
+    <section class="author-section">
+    <p>
+      More about us
+    </p>
+
+    <div class="author-row">
+      <a class="button author" href="https://peh-suan.github.io/">
+        Po-Hsuan Huang
+      </a>
+
+      <a class="button author" href="https://sites.google.com/site/chiuchenhao/">
+        Chenhao Chiu
+      </a>
+      <a class="button author" href="https://sbslab.linguistics.ntu.edu.tw" style="background-color: #2f353b;">
+        SBS Lab
+      </a>
+    </div>
+    </section>
+    <div class="footer">
+      Scan the QR code again anytime to return to this page.
+    </div>
+  </main>
+</body>
+</html>
